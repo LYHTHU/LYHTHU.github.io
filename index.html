@@ -200,7 +200,7 @@
         <b>Bachelor of Engineering</b>, Computer Science and Technology
     </ul>
 
-    <h2>Work Experience and projects</h2>
+    <h2>Work Experience and Projects</h2>
     <ul>
         <li>
             2020/07 - Now &nbsp;&nbsp;&nbsp;&nbsp;R&D engineer of computer graphics and vision, Intelligent Creation Lab, <b>ByteDance</b>
@@ -212,7 +212,7 @@
         <li>
             2019/05 - 2020/05 &nbsp;&nbsp;&nbsp;&nbsp;Teaching Assistant, Courant Institute, <b>NYU</b>
             <ul>
-                <li> Operating System instructed by Prof. Hubertus Franke </li>
+                <li> Operating System, instructed by Prof. Hubertus Franke </li>
             </ul>
         </li>
 
@@ -236,7 +236,27 @@
     <h2>Academic Projects</h2>
     <ul>
         <li>
-            TBD
+            <b>Spatial StyleGAN</b> &nbsp;&nbsp;&nbsp;&nbsp; Supervised by Dr.Yujun Shen. 2021 <br>
+            <ul>
+                <li><b>Method</b>: We replaced the first feature map of StyleGAN with pixel coordinates encoding(Fourier encoding and SIREN encoding). To avoid the influence from zero padding, we removed all padding, bias and added noises and keep constant margins of all feature maps.</li>
+                <li><b>Result:</b> We successfully tanslate, scale, crop and outpaint(extend) the generated images by manipulating encoded coordinates.</li>
+            </ul>
+        </li>
+
+        <li>
+            <b>Single-view 3D reconstruction based on SDF.</b> &nbsp;&nbsp;&nbsp;&nbsp; Supervised by Prof. Ken Perlin. 2019<br>
+            <ul>
+            <li><b>Method</b>: 1. Generate a coarse Signed Distance Function(SDF) from an image, using marching cube to generate a mesh. 2. Deform the coarse network to the fine result.</li>
+            </ul>
+        </li>
+        <li>
+            <b>Thesis of Bachelor of Engineering.</b> &nbsp;&nbsp;&nbsp;&nbsp; Supervised by Prof. Jinlei Jiang. 2018
+            <ul>
+                <li><b>Title:</b> The porting and parallel optimization of a 2-dimensional acoustic wave propagation modeling program based on the
+                    poly-grid spectral element method. (Translated from the original Chinese title)</li>
+                <li><b>Main method</b>: 1. Re-implement the program(Fortran) with C++ and Armadillo (a high performance linear algebra library). 2. Re-implement the bottleneck operators with function from libraries. 3. Accelerate the program with OpenMP and MPI.</li> 
+                <li><b>Result</b> The maximum speedup achieved by the improved version is 29.2 when running on a Linux server with 16 physical cores, compared with the original Fortran code.</li>
+            </ul>
         </li>
     </ul>
 
